@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400;700&display=swap" rel="stylesheet">
+    <title>Albergue de Gatos - Adopta un Amigo</title>
+</head>
+<body>
+
+    <header>
+            <div class="logo">
+                <h1><span class="logo-miau">Miau</span><span class="logo-adopta">Adopta</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#gatos">Nuestros Gatos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#donar">Cómo Ayudar</a></li>
+            </ul>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h2>Encuentra a tu compañero ideal</h2>
+            <p>Brindamos una segunda oportunidad a gatitos rescatados. ¡Conócelos!</p>
+        </section>
+
+        <section id="gatos" class="gallery-section">
+            <h3>Gatitos en adopción</h3>
+            
+            <div class="gallery-grid">    
+                <article class="cat-card">
+                    <img src="https://img.freepik.com/fotos-premium/gato-naranja-joven-juega-diente-leon-luz-trasera-prado-verde-fabuloso-fondo-borroso_25996-9606.jpg" alt="Gato naranja joven">
+                    <div class="cat-info">
+                        <h4>Simba</h4>
+                        <p>Edad: 1 año</p>
+                        <p>Carácter: Muy juguetón y sociable.</p>
+                        <button class="btn-adoptar">Conocer más</button>
+                    </div>
+                </article>
+
+                <article class="cat-card">
+                    <img src="https://img.freepik.com/fotos-premium/hermoso-gato-gris-ojos-verdes-encuentra-sofa_320146-60.jpg" alt="Gata gris de ojos verdes">
+                    <div class="cat-info">
+                        <h4>Luna</h4>
+                        <p>Edad: 3 años</p>
+                        <p>Carácter: Tranquila y excelente para departamentos.</p>
+                        <button class="btn-adoptar">Conocer más</button>
+                    </div>
+                </article>
+
+                <article class="cat-card">
+                    <img src="https://www.shutterstock.com/image-photo/black-white-tuxedo-cat-wearing-260nw-390802723.jpg" alt="Gatito blanco y negro">
+                    <div class="cat-info">
+                        <h4>Félix</h4>
+                        <p>Edad: 6 meses</p>
+                        <p>Carácter: Curioso y lleno de energía.</p>
+                        <button class="btn-adoptar">Conocer más</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <h3>Contáctanos</h3>
+            <div class="contact-container">
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interes">Gatito de interés:</label>
+                        <select id="interes" name="interes">
+                            <option value="general">Información General</option>
+                            <option value="simba">Simba</option>
+                            <option value="luna">Luna</option>
+                            <option value="felix">Félix</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Solicitud</button>
+                </form>
+
+                <div class="contact-info">
+                    <h4>Nuestra Ubicación</h4>
+                    <p>bosque san juan de aragon 6ta seccion, Ciudad de México</p>
+                    <p>Teléfono: 55-1234-5678</p>
+                    <p>Horario: Lunes a Sábado de 10:00 a 18:00</p>
+                    <div id="map-canvas">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.877207854226!2d-99.07735462499976!3d19.46086028182459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fbbe04da924f%3A0xb5ed20746787eb90!2sZool%C3%B3gico%20de%20San%20Juan%20de%20Arag%C3%B3n%2C%20Gustavo%20A.%20Madero%2C%2007920%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1775020123788!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MiauAdopta. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

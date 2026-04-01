@@ -1,0 +1,327 @@
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1% 0;
+    margin: 0;
+    border-bottom: 1px solid #cecbcb;
+}
+.logo h1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.logo-miau {
+    color: #ff6f61;
+    font-weight: 700;
+}
+
+.logo-adopta {
+    color: #4ecdc4;
+    font-weight: 400;
+}
+
+.logo-miau:hover {
+    color: #9ac15a;
+    transition: 0.3s;
+}
+
+.logo-adopta:hover {
+    color: #30c573;
+    transition: 0.3s;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px 0;
+    margin: 0;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #cecbcb;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff6f61;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #4c89d3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2F0b3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.hero p {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.1rem;
+    margin:0;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+#gatos {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    display: grid;
+    text-align: center;
+}
+
+#gatos h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5rem;
+    color: #ff8c00;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@keyframes ronrroneo {
+    0% { transform: translate(0, 0); }
+  25% { transform: translate(-1.5px, 1.5px) rotate(-0.5deg); }
+  50% { transform: translate(1.5px, -1.5px) rotate(0.5deg); }
+  75% { transform: translate(-1.5px, -1.5px) rotate(-0.5deg); }
+  100% { transform: translate(1.5px, 1.5px) rotate(0.5deg); }
+}
+
+.cat-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(13, 3, 3, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.cat-card:hover {
+    transform: translateY(-10px);
+}
+
+.cat-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.cat-info h4 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin: 0 0 10px 0;
+}
+
+.cat-info p {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 5px 0;
+}
+
+.cat-card button {
+    background-color: #4ecdc4;
+    color: white;
+    margin: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+    position: relative;
+    overflow: hidden
+}
+
+.cat-card button::after {
+    content: '🐾';
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.cat-card button:hover::after {
+    right: 12px;
+    opacity: 1;
+}
+
+.cat-card button:hover{
+    padding-right: 45px;
+    background-color: #ff8c00;
+}
+
+.cat-card:hover img {
+    animation-name: ronrroneo;
+    animation-duration: 0.2s;     
+    animation-iteration-count: 10s; 
+    animation-timing-function: linear;
+}
+
+.contact-section {
+    background-color: #f9f9f9;
+    padding-bottom: 60px;
+}
+
+.contact-section h3 {
+    background-color: #4c89d3;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px 0;
+    margin: 0 0 40px 0;
+    font-family: 'Fredoka One', cursive;
+    width: 100%;
+}
+
+.contact-container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-family: 'Fredoka One', cursive;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.contact-form input, 
+.contact-form select, 
+.contact-form textarea {
+    padding: 12px 15px;      
+    border: 2px solid #ddd;  
+    border-radius: 12px;     
+    font-size: 1rem;         
+    outline: none;           
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+.contact-form input:focus, 
+.contact-form select:focus, 
+.contact-form textarea:focus {
+    border-color: #4a90e2;  
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.2);
+}
+
+.btn-submit {
+    background-color: #ff8c00; 
+    color: white;              
+    padding: 15px;             
+    border: none;              
+    border-radius: 25px;       
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.2rem;
+    cursor: pointer;           
+    width: 100%;             
+    transition: all 0.3s ease; 
+}
+
+.btn-submit:hover {
+    background-color: #e67e00;
+    transform: scale(1.03);  
+    box-shadow: 0 5px 15px rgba(230, 126, 0, 0.3); 
+}
+
+.contact-info {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(13, 3, 3, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-info h4 {
+    font-family: 'Fredoka One', cursive;
+    color: #ff8c00;
+    font-size: 1.8rem;
+    margin-bottom: 15PX;
+}
+
+.contact-info p {
+    font-family: 'Fredoka One', cursive;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+#map-canvas {
+    margin-top: 25px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 3px solid #4ecdc4;
+    transition: transform 0.3s ease;
+}
+
+#map-canvas:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    background-color: #333;
+    padding: 25px 0;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 4px solid #ff8c00;
+}
+
+footer p {
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1rem;
+    margin: 0;
+    letter-spacing: 1px;
+}
