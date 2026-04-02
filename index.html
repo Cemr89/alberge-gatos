@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400;700&display=swap" rel="stylesheet">
     <title>Albergue de Gatos - Adopta un Amigo</title>
 </head>
+<script src="script.js"></script>
 <body>
 
     <header>
@@ -20,6 +21,7 @@
                 <li><a href="#donar">Cómo Ayudar</a></li>
             </ul>
     </header>
+
 
     <main>
         <section id="inicio" class="hero">
@@ -103,22 +105,54 @@
                     <p>Horario: Lunes a Sábado de 10:00 a 18:00</p>
                     <div id="map-canvas">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.877207854226!2d-99.07735462499976!3d19.46086028182459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fbbe04da924f%3A0xb5ed20746787eb90!2sZool%C3%B3gico%20de%20San%20Juan%20de%20Arag%C3%B3n%2C%20Gustavo%20A.%20Madero%2C%2007920%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1775020123788!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.531234567!2d-99.068!3d19.455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI3JzE4LjAiTiA5OcKwMDQnMDQuOCJX!5e0!3m2!1ses!2smx!4v1234567890" 
                             width="100%" 
-                            height="300" 
+                            height="350" 
                             style="border:0;" 
                             allowfullscreen="" 
                             loading="lazy">
                         </iframe>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+        <section id="donar" class="donar-section">
+    <h3>Cómo Ayudar</h3>
+    <div class="donar-container">
+        <p>Tu donación nos ayuda a comprar comida, arena y pagar servicios médicos para más gatitos rescatados.</p>
+        <div class="metodos-pago">
+                <div class="pago-card">
+                    <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal">
+                    <a href="https://paypal.me/miaudopta" target="_blank" class="btn-donar">Donar con PayPal</a>
+                </div>
+                <div class="pago-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.NxUL3Ryds1JR4qvOASp8xAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mercado Pago">
+                    <a href="https://link.mercadopago.com.mx/miaudopta" target="_blank" class="btn-donar-mp">Donar con Mercado Pago</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2026 MiauAdopta. Todos los derechos reservados.</p>
     </footer>
-
+    
+    <div id="modal-gato" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="detalles-gato"></div>
+        </div>
+    </div>
+    
+    <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img id="img-full" src="" alt="Gatito en pantalla completa">
+    </div>
+    
+    <script src="script.js"></script>
+    
 </body>
 </html>
