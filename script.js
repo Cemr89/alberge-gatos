@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+    
     const modal = document.getElementById("modal-gato");
     const contenidoModal = document.getElementById("detalles-gato");
     const btnCerrarModal = document.querySelector(".close-modal");
@@ -8,6 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const imgFull = document.getElementById('img-full');
     const btnCerrarLightbox = document.querySelector('.close-lightbox');
     
+    try {emailjs.init({
+        publicKey: "7H0Xhcq8LPLQwnfjs",
+    }); 
+    } catch (error) {
+    console.log("Error de EmailJS capturado; el audio sigue funcionando.");
+}
+
 const miauAudio = new Audio('mew.wav');
 
     document.querySelectorAll('.cat-card').forEach(tarjeta => {
@@ -17,7 +24,7 @@ const miauAudio = new Audio('mew.wav');
             miauAudio.currentTime = 0; 
             miauAudio.play().catch(() => {});
         });
-
+        
         const imagen = tarjeta.querySelector('img');
         imagen.style.cursor = "zoom-in"; 
         imagen.addEventListener('click', () => {
@@ -67,4 +74,35 @@ const miauAudio = new Audio('mew.wav');
             header.classList.remove('scrolled');
         }
     });
+
+    const contactForm = document.getElementById('contact-form');
+    const btnSubmit = document.querySelector('.btn-submit');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const originalText = btnSubmit.innerText;
+            btnSubmit.innerText = 'Enviando...';
+            btnSubmit.disabled = true;
+
+            const serviceID = 'default_service'; 
+            const templateID = 'template_z94lstf'; 
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    alert('¡Miau! Tu solicitud ha sido enviada con éxito. 🐾');
+                    contactForm.reset();
+                })
+                .catch((err) => {
+                    alert('Error al enviar: ' + JSON.stringify(err));
+                })
+                .finally(() => {
+                    setTimeout(() => {
+                        btnSubmit.innerText = originalText;
+                        btnSubmit.disabled = false;
+                    }, 2000);
+                });
+        });
+    }
 });

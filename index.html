@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400;700&display=swap" rel="stylesheet">
     <title>Albergue de Gatos - Adopta un Amigo</title>
 </head>
-<script src="script.js"></script>
 <body>
     <audio id="miau-audio" src="mew.wav" preload="auto"></audio>
 
@@ -70,7 +69,7 @@
         <section id="contacto" class="contact-section">
             <h3>Contáctanos</h3>
             <div class="contact-container">
-                <form action="#" method="POST" class="contact-form">
+                <form id="contact-form" class="contact-form">
                     <div class="form-group">
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required>
@@ -149,10 +148,10 @@
     </div>
     
     <div id="lightbox" class="lightbox">
-    <span class="close-lightbox">&times;</span>
+    <span class="close-lightbox">×</span>
     <img id="img-full" src="" alt="Gatito en pantalla completa">
     </div>
-    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
     
 </body>
