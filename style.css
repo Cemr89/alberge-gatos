@@ -248,6 +248,40 @@ header.scrolled{
     animation-timing-function: linear;
 }
 
+/* Estilos principales del botón */
+.btn-con-imagen {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4ecdc4; /* Verde agua del tema */
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    gap: 12px; /* Espacio exacto entre la imagen y el texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: fit-content; /* Se ajusta al contenido */
+}
+
+/* Estilos específicos para la imagen dentro del botón */
+.btn-con-imagen img {
+    width: 24px; /* Ajusta el tamaño según tu imagen */
+    height: 24px;
+    object-fit: contain;
+    /* Si la imagen es negra y quieres que se vea blanca, puedes usar un filtro: */
+    /* filter: invert(1); */
+}
+
+/* Efecto Hover para que se anime al pasar el ratón */
+.btn-con-imagen:hover {
+    background-color: #ff8c00; /* Naranja del tema */
+    transform: translateY(-3px); /* Pequeño salto hacia arriba */
+    box-shadow: 0 6px 12px rgba(255, 140, 0, 0.3);
+}
+
 .contact-section {
     background-color: #f9f9f9;
     padding-bottom: 60px;
