@@ -348,11 +348,11 @@ header.scrolled{
     transform: scale(1.03);  
     box-shadow: 0 5px 15px rgba(230, 126, 0, 0.3); 
 }
-
-.contact-info {
+.contact-info 
+    font-size: 1.1rem;
     margin-top: 40px;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     background-color: #f9f9f9;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(13, 3, 3, 0.1);
