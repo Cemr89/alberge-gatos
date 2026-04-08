@@ -113,7 +113,7 @@ header.scrolled{
     font-weight: bold;
 }
 
-.hero p {
+.hero, p {
     font-family: 'Fredoka One', cursive;
     font-size: 2.1rem;
     margin:0;
@@ -128,7 +128,8 @@ header.scrolled{
     text-align: center;
 }
 
-#gatos h3 {
+.gallery-section h3 {
+    text-align: center;
     font-family: 'Fredoka One', cursive;
     font-size: 2.5rem;
     color: #ff8c00;
@@ -247,8 +248,6 @@ header.scrolled{
     animation-iteration-count: 10s; 
     animation-timing-function: linear;
 }
-
-/* Estilos principales del botón */
 .btn-con-imagen {
     display: inline-flex;
     align-items: center;
@@ -266,19 +265,15 @@ header.scrolled{
     width: fit-content; /* Se ajusta al contenido */
 }
 
-/* Estilos específicos para la imagen dentro del botón */
 .btn-con-imagen img {
-    width: 24px; /* Ajusta el tamaño según tu imagen */
+    width: 24px; 
     height: 24px;
     object-fit: contain;
-    /* Si la imagen es negra y quieres que se vea blanca, puedes usar un filtro: */
-    /* filter: invert(1); */
 }
 
-/* Efecto Hover para que se anime al pasar el ratón */
 .btn-con-imagen:hover {
-    background-color: #ff8c00; /* Naranja del tema */
-    transform: translateY(-3px); /* Pequeño salto hacia arriba */
+    background-color: #ff8c00;
+    transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(255, 140, 0, 0.3);
 }
 

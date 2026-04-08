@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400;700&display=swap" rel="stylesheet">
+    <title>Albergue de Gatos - Adopta un Amigo</title>
+</head>
+<body>
+    <audio id="miau-audio" src="mew.wav" preload="auto"></audio>
+
+    <header>
+            <div class="logo">
+                <h1><span class="logo-miau">Miau</span><span class="logo-adopta">Adopta</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#gatos">Nuestros Gatos</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="index.html#donar">Cómo Ayudar</a></li>
+            </ul>
+    </header>
+
+
+    <main>
+        <section id="galeria-categorias" class="gallery-section">
+            <h3>Nuestros Amigos por Categoría</h3>
+            <p>Conoce a los gatitos esperando un hogar, organizados por su etapa de vida y necesidades.</p>
+            
+            <div class="gallery-grid"> 
+                
+                <article class="cat-card">
+                    <img src="NieveClinica.jpeg" alt="Gatito bebé jugando">
+                    <div class="cat-info">
+                        <h4>Bebés Juguetones</h4>
+                        <p><strong>Bebes</strong></p>
+                        <p>Edad: 1 a 6 meses</p>
+                        <p>Pequeños llenos de energía y curiosidad, listos para crecer en su primer hogar amoroso.</p>
+                        <button class="btn-adoptar">Ver Bebés</button>
+                    </div>
+                </article>
+
+                <article class="cat-card">
+                    <img src="TulusClinica.jpeg" alt="Gato adulto elegante">
+                    <div class="cat-info">
+                        <h4>Adultos Sabios</h4>
+                        <p><strong>Adultos</strong></p>
+                        <p>Edad: +1 año</p>
+                        <p>Compañeros leales y maduros. Su personalidad ya está definida y son ideales para cualquier familia.</p>
+                        <button class="btn-adoptar">Ver Adultos</button>
+                    </div>
+                </article>
+
+                <article class="cat-card">
+                    <img src="berliClinica.jpeg" alt="Gato senior o especial">
+                    <div class="cat-info">
+                        <h4>Casos Especiales</h4>
+                        <p><strong>Especiales</strong></p>
+                        <p>Edad: Variable</p>
+                        <p>Gatitos senior o con necesidades médicas que buscan un héroe que les dé una segunda oportunidad.</p>
+                        <button class="btn-adoptar">Ver Especiales</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+        <section id="donar" class="donar-section">
+    <h3>Cómo Ayudar</h3>
+    <div class="donar-container">
+        <p>Tu donación nos ayuda a comprar comida, arena y pagar servicios médicos para más gatitos rescatados.</p>
+        <div class="metodos-pago">
+                <div class="pago-card">
+                    <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal">
+                    <a href="https://paypal.me/miaudopta" target="_blank" class="btn-donar">Donar con PayPal</a>
+                </div>
+                <div class="pago-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.NxUL3Ryds1JR4qvOASp8xAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mercado Pago">
+                    <a href="https://link.mercadopago.com.mx/miaudopta" target="_blank" class="btn-donar-mp">Donar con Mercado Pago</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MiauAdopta. Todos los derechos reservados.</p>
+    </footer>
+    
+    <div id="modal-gato" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="detalles-gato"></div>
+        </div>
+    </div>
+    
+    <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">×</span>
+    <img id="img-full" src="" alt="Gatito en pantalla completa">
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
