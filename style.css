@@ -119,6 +119,7 @@ header.scrolled{
     margin:0;
     font-weight: 800;
     line-height: 1.5;
+    text-align: center;
 }
 
 #gatos {
@@ -348,7 +349,7 @@ header.scrolled{
     transform: scale(1.03);  
     box-shadow: 0 5px 15px rgba(230, 126, 0, 0.3); 
 }
-.contact-info 
+.contact-info {
     font-size: 1.1rem;
     margin-top: 40px;
     text-align: center;
@@ -359,6 +360,15 @@ header.scrolled{
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.contact-info p {
+    font-family: 'Fredoka One', cursive; 
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: normal; 
 }
 
 .contact-info h4 {
