@@ -10,17 +10,15 @@ body {
     scroll-behavior: smooth;
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 1% 0;
-    margin: 0;
     border-bottom: 1px solid #cecbcb;
-    transition: all 0.3s ease;
-    overflow: hidden;
+    opacity: 1;
 }
+
 .logo h1{
     font-family: 'Fredoka One', cursive;
     font-size: 2rem;
@@ -71,26 +69,23 @@ body {
 }
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: 1000;
     background-color: #4c89d3;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 0;
+    }
+
+header.scrolled .logo {
+    display: none;
 }
 
-header.scrolled .logo{
-    height: 0;
-    padding: 0;
-    border-bottom: none;
-    opacity: 0;
-}
-
-header.scrolled{
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+header.scrolled {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .hero {
@@ -422,6 +417,9 @@ footer p {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .modal-content {
@@ -429,8 +427,9 @@ footer p {
     margin: 5% auto;
     padding: 20px;
     border-radius: 20px;
-    width: 90%;
-    max-width: 500px;
+    width: 95%;
+    max-width: 450px;
+    max-height: 85vh;
     position: relative;
     text-align: center;
     font-family: 'Fredoka One', cursive;

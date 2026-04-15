@@ -67,13 +67,14 @@ const miauAudio = new Audio('mew.wav');
         }
     };
     const header = document.querySelector('header');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
 
     const contactForm = document.getElementById('contact-form');
     const btnSubmit = document.querySelector('.btn-submit');
